@@ -1,4 +1,4 @@
-#  Student Grade Analyzer (Python Project)
+#  Student Grade Analyzer
 
 A modular and efficient Python tool to analyze student marks using statistical methods.  
 This project allows users to load marks from a CSV file or enter them manually, compute all key statistics, analyze class performance, and generate a structured JSON report.  
@@ -117,36 +117,6 @@ Contains:
 - Warnings  
 - Errors  
 - Execution details  
-
-
-##  Testing
-
-You can add your own CSV files in the `data/` directory and test different cases:
-- Valid marks  
-- Invalid rows  
-- Empty files  
-- Large number of students  
-
-
-##  Screenshots (To Be Added by You)
-
-Please include these in a `screenshots/` folder:
-- CLI main menu  
-- CSV sample  
-- Program output  
-- report.json file  
-- log file  
-
-This enhances your GitHub and project report.
-
-
-##  Future Enhancements
-- Add graphs using `matplotlib`  
-- Add multiple subjects support  
-- Introduce PDF report generation  
-- Add GUI using Tkinter  
-- Cloud sync or database storage  
-
 
 ##  License
 This project is open for educational and academic use.
