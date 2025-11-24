@@ -1,20 +1,21 @@
-#  Student Grade Analyzer
+# Student Grade Analyzer
 
-A modular and efficient Python tool to analyze student marks using statistical methods.  
-This project allows users to load marks from a CSV file or enter them manually, compute all key statistics, analyze class performance, and generate a structured JSON report.  
-All logs are stored in a log file for debugging and tracking.
+This is a simple and modular Python project that helps analyze student marks.  
+You can load marks from a CSV file or enter them manually, and the program will calculate important statistics and performance insights automatically.  
+It also creates a clean JSON report and keeps logs of everything that happens.
 
-This project fulfills academic requirements for Python Programming, covering modular design, file handling, functions, logging, and structured reporting.
+This project was built as part of my introduction to problem solving coursework.
 
 
-##  Features
+## What this project can do
 
-###  1. CSV / Manual Input Options
-- Load marks from a `.csv` file  
-- OR enter marks manually through the command-line interface  
+### Load Marks
+You can provide marks in two ways:
+- Upload a CSV file  
+- Enter marks manually in the terminal  
 
-###  2. Statistical Analysis
-Automatically calculates:
+### Calculate Statistics
+The program automatically finds:
 - Mean  
 - Median  
 - Mode  
@@ -22,31 +23,30 @@ Automatically calculates:
 - Standard deviation  
 - Highest and lowest marks  
 
-###  3. Performance Evaluation
-- Total students  
-- Passed and failed count  
+### Analyze Performance
+It also breaks down:
+- How many students passed and failed  
 - Pass percentage  
-- Top 3 performers  
-- Weakest 3 performers  
+- Top 3 scorers  
+- Weakest 3 scorers  
 
-###  4. Report Generator
-- Generates `report.json` with:
-  - Full statistical summary  
-  - Performance insights  
+### Generate Report
+Everything (stats + performance) is saved neatly in:
+report.json
+### Logging
+A log file named:
+grade_analyzer.log
+is created so you can track warnings or errors (like invalid CSV rows).
 
-###  5. Logging
-- All warnings, errors, and processes are stored in `grade_analyzer.log`  
 
 ##  Technologies Used
 
-- **Python 3.x**
-- Standard libraries only:
-  - `csv`
-  - `statistics`
-  - `json`
-  - `logging`
+- Python 3
+- Built-in modules:  
+  csv, statistics, json, logging
 
-No external libraries required.
+No external libraries needed.
+
 
 ##  Project Structure
 
@@ -61,39 +61,35 @@ Student_Grade_Analyzer/
 │   └── utils/
 │       └── logger.py
 │
-├── data/ (optional)
-│   └── sample_marks.csv
-│
-├── screenshots/ (add yourself)
-│
+├── data/                (optional folder for CSV files)
+├── screenshots/         (add your screenshots here)
 ├── README.md
 ├── statement.md
 └── requirements.txt
-```
-
 ---
 
-##  How to Run the Project
+##  How to Run the Program
 
-### 1️ Step into the project folder
-```
+### Step 1: Open terminal inside the project folder  
+Run:
 cd Student_Grade_Analyzer
-```
-
-### 2️ Run the main file
-
+### Step 2: Run the program  
 Windows:
 python src/main.py
-
 Mac/Linux:
 python3 src/main.py
+### Step 3: Choose an option
+You will see a menu:
 
-### 3️ Choose input method
+===== STUDENT GRADE ANALYZER =====
 1. Load marks from CSV
 2. Enter marks manually
 3. Exit
+Choose the option you want.
 
-### 📌 CSV Format Example
+##  CSV Format Example
+
+If you choose the CSV option, use this format:
 
 Name,Marks
 Rahul,78
@@ -101,29 +97,41 @@ Sneha,65
 Vijay,32
 Nisha,92
 Amit,55
-```
+Only the second column needs to be numeric.
 
----
 
-##  Output Files Generated
+## Output Files
 
-### `report.json`
+### 1. report.json  
 Contains:
-- All computed statistics  
-- Performance evaluation results  
+- All calculated statistics  
+- Performance breakdown  
 
-### `grade_analyzer.log`
-Contains:
+### 2. grade_analyzer.log  
+Contains logs of:
 - Warnings  
 - Errors  
-- Execution details  
+- Execution flow  
 
-##  License
-This project is open for educational and academic use.
+## Screenshots
 
----
+- The main menu  
+- Final calculated results  
+- report.json  
+- log file  
 
-##  Author
-**Aditya Singh**
+## Possible Future Improvements
+
+Here are some ideas that could be added later:
+- Graphs using matplotlib  
+- Support for multiple subjects  
+- Exporting results as PDF  
+- Simple GUI using Tkinter  
+- Percentage and grade distribution charts  
+
+## Author
+
+Aditya Singh  
+Python Programming Project
 
 
