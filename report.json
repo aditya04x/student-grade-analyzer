@@ -1,0 +1,27 @@
+{
+  "statistics": {
+    "mean": 62.0,
+    "median": 60.5,
+    "mode": 44.0,
+    "variance": 740.0,
+    "std_dev": 27.202941017470888,
+    "highest": 98.0,
+    "lowest": 22.0
+  },
+  "performance": {
+    "total_students": 10,
+    "passed": 7,
+    "failed": 3,
+    "pass_percentage": 70.0,
+    "top_performers": [
+      98.0,
+      95.0,
+      89.0
+    ],
+    "weak_students": [
+      22.0,
+      36.0,
+      37.0
+    ]
+  }
+}
